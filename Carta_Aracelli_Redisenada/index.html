@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#351b32">
+<meta name="description" content="Para Aracelli: diez fotos, una historia y un amor verdadero.">
+<title>Para vos, mi bebé · Una carta para Aracelli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#2c172b;--plum:#552a4b;--rose:#b94466;--petal:#ffb2b9;--cream:#fff9f4;--ink:#3a2933;--gold:#e9b786;--line:#f0dad8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:#f9eeeb;color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #bb5266;outline-offset:5px}
+::selection{background:#f4bbc4;color:#4c1e39}
+#readProgress{position:fixed;inset:0 auto auto 0;height:4px;width:0;background:linear-gradient(90deg,#efb77c,#ec6389,#b73662);z-index:90;box-shadow:0 0 13px #f0a6aa}
+.glitter{position:fixed;pointer-events:none;width:7px;height:7px;background:#ffe4d1;border-radius:50%;z-index:3;opacity:.6;animation:twinkle 7s ease-in-out infinite}.glitter.a{top:16%;left:6%}.glitter.b{top:28%;right:9%;animation-delay:1.4s}.glitter.c{top:63%;left:4%;animation-delay:2.7s}
+@keyframes twinkle{0%,100%{transform:scale(.5);opacity:.15}50%{transform:scale(1.5);opacity:.8}}
+.hero{position:relative;isolation:isolate;min-height:96svh;display:grid;place-items:center;overflow:hidden;padding:80px 20px 74px;background:radial-gradient(ellipse at 0% 20%,#ab4864 0,transparent 49%),radial-gradient(ellipse at 100% 0%,#ba576a 0,transparent 42%),linear-gradient(145deg,#5b2b4d 0%,#371b35 65%,#281529 100%)}
+.hero::before{content:'';position:absolute;inset:-20%;background:radial-gradient(circle at 75% 65%,#ffb4b052 0%,transparent 26%),radial-gradient(circle at 10% 55%,#e6a27340 0,transparent 32%);animation:breath 13s ease-in-out infinite alternate;z-index:-1}
+@keyframes breath{from{transform:translate(-2%,-2%) scale(1)}to{transform:translate(2%,2%) scale(1.11)}}
+.halo{position:absolute;border:1px solid #fff4df45;border-radius:50%;pointer-events:none}.halo.a{height:470px;width:470px;right:-180px;top:-160px}.halo.b{height:330px;width:330px;left:-190px;bottom:-140px}
+.float-heart{position:absolute;font-size:clamp(18px,3vw,32px);color:#f8c2c2;opacity:.62;animation:drift 7s ease-in-out infinite;pointer-events:none}.float-heart.one{top:9%;left:12%}.float-heart.two{bottom:14%;right:10%;animation-delay:-2.2s}.float-heart.three{top:24%;right:19%;font-size:15px;animation-delay:-4.5s}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(-9deg)}50%{transform:translateY(-20px) rotate(9deg)}}
+.hero-inner{width:min(100%,1120px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(20px,5vw,68px)}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#ffd8c8;text-transform:uppercase;letter-spacing:.26em;font-size:11px;font-weight:700}
+.hero h1{font:600 clamp(56px,8vw,103px)/.97 'Playfair Display',Georgia,serif;letter-spacing:-.065em;color:#fffaf2;margin:22px 0 18px;text-shadow:0 8px 28px #1d0e201f}
+.hero h1 em{display:inline-block;font-style:italic;color:#f4adbc;letter-spacing:-.06em}
+.hero-desc{max-width:440px;color:#f9e2e6;font-size:clamp(16px,2vw,20px);line-height:1.7;margin:0 0 26px}
+.hero-date{display:inline-flex;align-items:center;gap:10px;border:1px solid #ffded16e;border-radius:100px;padding:12px 18px;background:#ffffff16;color:#fff1e8;font-size:13px;letter-spacing:.02em;backdrop-filter:blur(10px)}
+.hero-photo{position:relative;justify-self:center;width:min(100%,420px);transform:rotate(2deg);animation:floatPhoto 7s ease-in-out infinite;filter:drop-shadow(0 24px 30px #170f1c75)}
+@keyframes floatPhoto{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-11px) rotate(0deg)}}
+.hero-photo::before{content:'';position:absolute;inset:-14px;border:1px solid #fff4db8c;border-radius:26px;transform:rotate(-5deg)}
+.hero-photo .frame{background:#fffdf8;border:10px solid #fffdf8;border-bottom-width:26px;border-radius:9px;position:relative;box-shadow:0 14px 40px #180e245c}
+.hero-photo img{width:100%;height:auto;max-height:545px;object-fit:contain}
+.tape{position:absolute;top:-25px;left:37%;height:34px;width:110px;transform:rotate(-11deg);background:#ffddc69b;z-index:1;box-shadow:0 2px 8px #381d2433}
+.photo-heart{position:absolute;right:-26px;bottom:40px;color:#fbd3b6;font-size:45px;text-shadow:0 2px 9px #1b061d80;transform:rotate(15deg)}
+.scroll-cue{position:absolute;bottom:19px;left:50%;transform:translateX(-50%);display:grid;justify-items:center;gap:8px;color:#f7ced5;font-size:11px;text-transform:uppercase;letter-spacing:.2em;text-align:center}.scroll-cue span{font-size:21px;animation:pointDown 2s ease-in-out infinite}@keyframes pointDown{50%{transform:translateY(7px)}}
+.music-ribbon{position:sticky;top:4px;z-index:30;width:fit-content;max-width:calc(100% - 24px);margin:-18px auto 0;border-radius:100px;display:flex;align-items:center;justify-content:center;gap:9px;padding:11px 18px;color:#713c57;background:#fff8f1f2;border:1px solid #eccbc5;box-shadow:0 8px 22px #62344c25;backdrop-filter:blur(16px);font-size:12px;font-weight:700}
+.sound-wave{display:flex;align-items:flex-end;gap:3px;height:15px}.sound-wave i{width:3px;height:6px;border-radius:3px;background:#b74c68;animation:sound 1s ease-in-out infinite alternate;animation-play-state:paused}.sound-wave i:nth-child(2){height:12px;animation-delay:.17s}.sound-wave i:nth-child(3){height:8px;animation-delay:.37s}body.song-playing .sound-wave i{animation-play-state:running}@keyframes sound{to{height:2px}}
+.song-tip{position:fixed;bottom:17px;left:50%;transform:translate(-50%,120%);width:max-content;max-width:calc(100% - 26px);background:#4d2346;color:#fff3ea;border:1px solid #f5c3c4a6;border-radius:100px;z-index:100;padding:13px 18px;text-align:center;box-shadow:0 10px 22px #32102f4f;font-size:12px;transition:transform .6s}.song-tip.show{transform:translate(-50%,0)}
+.story-bg{position:relative;padding:60px 0 80px;background:radial-gradient(circle at 0 11%,#f6cedc 0,transparent 23%),radial-gradient(circle at 100% 43%,#f6d4c5 0,transparent 24%),linear-gradient(180deg,#fff3f1 0%,#f9efeb 50%,#ffefe9 100%)}
+.story-bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(#d5a5aa 1px,transparent 1px);background-size:32px 32px;opacity:.11;pointer-events:none}
+.story-shell{position:relative;z-index:1;width:min(100% - 36px,800px);margin:auto}
+.opening-quote{text-align:center;padding:0 20px 50px}.opening-quote .heart{font-size:28px;color:#ca6280}.opening-quote p{font:italic 500 clamp(25px,4vw,38px)/1.38 'Playfair Display',Georgia,serif;color:#713a51;max-width:720px;margin:14px auto}.opening-quote .subline{color:#a06d78;text-transform:uppercase;font-size:10px;letter-spacing:.26em;font-weight:700}
+.chapter{padding:clamp(30px,6vw,57px) clamp(25px,6vw,58px);margin:0 auto 36px;border:1px solid #ead0cd;border-radius:26px;background:linear-gradient(150deg,#fffdfa 0%,#fff8f4 76%,#fff4ee 100%);box-shadow:0 13px 43px #6e3b4b16;position:relative}
+.chapter:before{content:'';position:absolute;left:16px;top:16px;bottom:16px;width:2px;border-radius:2px;background:linear-gradient(180deg,#d8869a66,transparent)}
+.chapter-top{display:flex;align-items:center;gap:15px;color:#a64e69;font-size:12px;font-weight:700;letter-spacing:.13em}.chapter-line{height:1px;flex:1;background:linear-gradient(90deg,#e3aab5,#e8d3cf)}.chapter-icon{font-size:17px;color:#b45c73;animation:heartBeat 4s ease-in-out infinite}@keyframes heartBeat{0%,85%,100%{transform:scale(1)}91%{transform:scale(1.15)}}
+.chapter h2{font:600 clamp(28px,5vw,42px)/1.17 'Playfair Display',Georgia,serif;letter-spacing:-.035em;color:#713d52;margin:20px 0 25px}
+.chapter-text p{font:400 clamp(16px,2.1vw,18px)/1.9 'Playfair Display',Georgia,serif;margin:0 0 22px;color:#473239}.chapter-text p:last-child{margin-bottom:0}.chapter-text strong{font-weight:700;color:#9b3c60}.chapter-text .salutation{font-size:clamp(24px,3.2vw,30px);font-style:italic;color:#8a3758}.chapter-text .big-date{font:italic 600 clamp(22px,3.4vw,29px)/1.45 'Playfair Display',serif;text-align:center;color:#a64062;margin:30px 0}.chapter-text .signature{font:italic 600 36px 'Playfair Display',serif;text-align:center;color:#8f3d5e}.chapter-text .date-foot{font-style:italic;color:#906773;font-size:16px;text-align:center}
+.memory-photo{position:relative;margin:0 auto 56px;width:min(95%,730px);text-align:center}.photo-glow{position:absolute;inset:8% 5%;border-radius:100px;background:radial-gradient(ellipse,#f2b1bc91,transparent 68%);filter:blur(31px);pointer-events:none}
+.photo-button{position:relative;display:block;width:min(100%,610px);margin:0 auto;padding:12px 12px 28px;background:#fffefb;border:0;border-radius:12px;box-shadow:0 17px 39px #61334337;transform:rotate(-1.1deg);transition:transform .4s,box-shadow .4s}.memory-photo:nth-of-type(even) .photo-button{transform:rotate(1.1deg)}.photo-button:hover{transform:translateY(-5px) rotate(0);box-shadow:0 25px 43px #61334347}
+.photo-button img{height:auto;max-height:520px;width:100%;object-fit:contain;border-radius:5px;background:#f6e9e7}.memory-photo figcaption{position:relative;font:italic 500 clamp(17px,3vw,21px)/1.5 'Playfair Display',Georgia,serif;color:#9c5874;max-width:560px;margin:18px auto 0}.memory-photo figcaption span{font-style:normal;color:#cd8092}
+.grand-finale{margin:30px auto 0;text-align:center;padding:38px 14px 18px;border-top:1px solid #e4b8c1}.grand-finale .mini{color:#a64e69;text-transform:uppercase;letter-spacing:.24em;font-size:11px;font-weight:700}.grand-finale h2{font:italic 600 clamp(34px,6vw,58px)/1.12 'Playfair Display',Georgia,serif;color:#803b54;margin:16px auto 30px}.grand-finale img{display:block;width:min(100%,760px);margin:auto;border:9px solid #fffefb;box-shadow:0 20px 55px #64364840;border-radius:8px}.grand-finale p{font:italic 500 23px 'Playfair Display',serif;color:#915670;margin:28px auto 0}.footer{background:#48233e;color:#f5d8df;text-align:center;padding:26px 12px 31px;font-size:12px}.footer strong{color:#fff5ea}
+.js .reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.65,.3,1)}.js .reveal.visible{opacity:1;transform:translateY(0)}
+.lightbox{position:fixed;inset:0;background:#170e19eF;z-index:200;border:0;width:100%;height:100%;padding:35px 18px 25px;align-items:center;justify-content:center;backdrop-filter:blur(12px)}.lightbox[open]{display:flex}.lightbox img{max-height:88vh;max-width:94vw;object-fit:contain;border:6px solid #fffef9;border-radius:5px;box-shadow:0 16px 40px #0006}.lightbox .close{position:fixed;top:12px;right:16px;background:#fffdf6;color:#753952;border:0;border-radius:50%;font-size:21px;width:43px;height:43px}
+@media(min-width:700px){.memory-photo:nth-of-type(4n) .photo-button{margin-left:8%;margin-right:auto}.memory-photo:nth-of-type(4n+2) .photo-button{margin-left:auto;margin-right:8%}}
+@media(max-width:780px){.hero{min-height:100svh;padding:54px 22px 60px}.hero-inner{grid-template-columns:1fr;text-align:center;gap:29px}.hero h1{font-size:clamp(50px,11vw,74px);margin:16px 0}.hero-desc{margin:0 auto 20px}.hero-photo{width:min(58vw,310px);grid-row:1}.hero-photo img{max-height:350px}.hero-photo .frame{border-width:7px;border-bottom-width:19px}.eyebrow{justify-content:center}.hero-date{justify-content:center}.scroll-cue{font-size:9px;bottom:10px}.music-ribbon{margin-top:-14px}.story-bg{padding-top:42px}.opening-quote{padding-bottom:34px}.chapter{margin-bottom:32px}.memory-photo{margin-bottom:44px}}
+@media(max-width:480px){.hero-photo{width:min(62vw,248px)}.hero-photo img{max-height:280px}.hero{padding:38px 20px 58px;min-height:96svh}.hero h1{font-size:47px}.hero-desc{font-size:14px;line-height:1.55}.hero-date{font-size:11px;padding:10px 12px}.eyebrow{font-size:9px}.story-shell{width:min(100% - 20px,800px)}.chapter{padding:27px 21px 33px;border-radius:20px}.chapter:before{left:8px;top:15px;bottom:15px}.chapter h2{font-size:30px}.chapter-text p{font-size:17px;line-height:1.8}.memory-photo{width:min(100% - 6px,730px)}.photo-button{padding:8px 8px 23px}.photo-button img{max-height:530px}.grand-finale img{border-width:5px}.grand-finale h2{font-size:38px}.glitter{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
+@media print{.hero{min-height:0;padding:30px 0;background:#69364e;print-color-adjust:exact}.hero-photo{width:180px}.scroll-cue,.music-ribbon,.song-tip,.photo-glow{display:none!important}.chapter{break-inside:avoid;box-shadow:none}.memory-photo{break-inside:avoid}.photo-button{box-shadow:none}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="readProgress" aria-hidden="true"></div>
+<div class="glitter a"></div><div class="glitter b"></div><div class="glitter c"></div>
+<audio id="ourSong" src="musica/Quien_Eres_Tu.mp3" autoplay loop preload="auto" playsinline aria-label="Nuestra canción: Quién Eres Tú"></audio>
+<div id="songTip" class="song-tip" role="status" aria-live="polite">♫ Tocá cualquier parte de la carta para escuchar nuestra canción.</div>
+<header class="hero">
+ <div class="halo a"></div><div class="halo b"></div>
+ <span class="float-heart one" aria-hidden="true">♡</span><span class="float-heart two" aria-hidden="true">♥</span><span class="float-heart three" aria-hidden="true">♡</span>
+ <div class="hero-inner">
+  <div class="hero-copy">
+   <span class="eyebrow">✦ Una historia que quiero vivir con vos</span>
+   <h1>Para vos,<br><em>mi bebé.</em></h1>
+   <p class="hero-desc">Aracelli, junté nuestras fotos y todas las palabras que llevo en el corazón. Quiero que recorras conmigo cada pedacito de nuestra historia.</p>
+   <div class="hero-date">♥ 7 de julio de 2026 · Nuestro comienzo</div>
+  </div>
+  <div class="hero-photo"><div class="tape" aria-hidden="true"></div><div class="frame"><img src="imagenes/foto_01.jpg" fetchpriority="high" alt="Aracelli sonriendo junto a su amor, en un recuerdo muy especial"></div><span class="photo-heart" aria-hidden="true">♡</span></div>
+ </div>
+ <div class="scroll-cue">Deslizá para leer nuestra historia <span aria-hidden="true">⌄</span></div>
+</header>
+<div class="music-ribbon" aria-label="Nuestra canción Quién Eres Tú"><span class="sound-wave" aria-hidden="true"><i></i><i></i><i></i></span><span>♫ Nuestra canción · Quién Eres Tú</span><span aria-hidden="true">♥</span></div>
+<main class="story-bg">
+ <div class="story-shell">
+  <div class="opening-quote reveal"><span class="heart" aria-hidden="true">♥</span><p>“Y si volviera a nacer, te buscaría una y mil veces más.”</p><div class="subline">Una carta para mi amor verdadero</div></div>
+  <section class="chapter reveal" id="capitulo-1" aria-label="Todo empezó con vos">
+   <div class="chapter-top"><span class="chapter-index">01</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Todo empezó con vos</h2>
+   <div class="chapter-text"><p class="salutation">Mi hermosa Aracelli:</p>
+<p>No sé por dónde empezar esta carta, porque cuando se trata de vos, siento tantas cosas que a veces las palabras no me alcanzan para explicarlas.</p>
+<p>Hoy quise juntar algunas de nuestras fotos y, mientras las miraba, me encontré sonriendo, recordando cada momento, pero también emocionándome hasta las lágrimas. Porque cada una de esas imágenes tiene algo que para mí vale muchísimo: estás vos, el amor de mi vida.</p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="2">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_02.jpg" aria-label="Ver foto 2 ampliada">
+    <img src="imagenes/foto_02.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 2 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Cada pequeño momento con vos se convierte en un recuerdo enorme.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-2" aria-label="Ese 7 de julio que cambió todo">
+   <div class="chapter-top"><span class="chapter-index">02</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Ese 7 de julio que cambió todo</h2>
+   <div class="chapter-text"><p>Nuestra historia no comenzó de la manera más sencilla. Nos conocimos en circunstancias complicadas y, aunque desde un principio sentía que había algo especial entre nosotros, tuve miedo de aceptar lo que me pasaba por las condiciones en las que estábamos.</p>
+<p>Lo que vos nunca supiste es que, incluso cuando no hablábamos, había momentos del día en los que aparecías en mi mente sin ninguna explicación. De repente me encontraba pensando en vos, preguntándome por qué, sin imaginar siquiera que del otro lado estaba pasando algo parecido.</p>
+<p class="big-date">Y entonces llegó aquel 7 de julio de 2026.</p>
+<p>Un día que voy a llevar guardado en mi corazón para siempre.</p>
+<p>Ese día te animaste a decirme lo que sentías por mí. Y no sabés lo que significó escucharte. Me sorprendiste, me llenaste de felicidad y, sobre todo, me diste una tranquilidad que no puedo describir. Porque descubrí que aquello que yo sentía en silencio también existía en tu corazón.</p>
+<p>Saber que habías guardado ese amor durante tres años me hizo valorar todavía más tus sentimientos. Y hoy agradezco que hayas tenido el valor de hablarme con el corazón.</p>
+<p><strong>Gracias, mi bebé, por no haber dejado de creer en lo que sentías.</strong></p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="3">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_03.jpg" aria-label="Ver foto 3 ampliada">
+    <img src="imagenes/foto_03.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 3 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Hasta el silencio se siente distinto cuando estamos juntos.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-3" aria-label="Me enamoré de tu forma de ser">
+   <div class="chapter-top"><span class="chapter-index">03</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Me enamoré de tu forma de ser</h2>
+   <div class="chapter-text"><p>Me enamoré de tu personalidad, de tu alegría, de esa energía hermosa que tenés para todo, de tus ganas de vivir, de tu confianza conmigo, de tu amor y de tu compañía.</p>
+<p>Me enamoré de esa loca hermosa que puede hacerme reír con cualquier cosa y que, sin darse cuenta, tiene la capacidad de cambiarme completamente el día.</p>
+<p>Pero, sobre todo, me enamoré de cómo soy cuando estoy con vos.</p>
+<p>Porque con vos no necesito aparentar nada. Podemos ser nosotros mismos, hablar durante horas, reírnos de cualquier pavada, abrazarnos o simplemente estar juntos sin aburrirnos jamás. Nos entendemos de una manera que nunca antes había experimentado.</p>
+<p><strong>Vos me devolviste algo que pensé que quizás no volvería a sentir: el verdadero significado del amor.</strong></p>
+<p>Desde que estás en mi vida soy más feliz. Y no te imaginás cuánto. A veces quisiera que los días tuvieran más horas, solamente para poder pasar más tiempo con vos.</p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="4">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_04.jpg" aria-label="Ver foto 4 ampliada">
+    <img src="imagenes/foto_04.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 4 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Con vos, cualquier día se convierte en uno de mis favoritos.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-4" aria-label="Quiero gritarle al mundo que te amo">
+   <div class="chapter-top"><span class="chapter-index">04</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Quiero gritarle al mundo que te amo</h2>
+   <div class="chapter-text"><p>Sé que hoy no podemos vivir nuestra relación con toda la libertad que quisiéramos. Y si hay algo que deseo profundamente es que llegue el día en que no tengamos que escondernos más.</p>
+<p>Quiero poder caminar de tu mano, abrazarte cuando tenga ganas, salir con vos sin preocupaciones y decirle al mundo entero, con una sonrisa enorme, que <strong>Aracelli es mi novia, mi compañera y el amor de mi vida.</strong></p>
+<p>Sueño con el día en que nuestras familias conozcan nuestra historia y podamos compartir nuestra felicidad con las personas que queremos.</p>
+<p>Porque, mi amor, yo no te quiero solamente para compartir algunos momentos. <strong>Yo te quiero para compartir mi vida.</strong></p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="5">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_05.jpg" aria-label="Ver foto 5 ampliada">
+    <img src="imagenes/foto_05.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 5 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> No hacen falta grandes planes cuando tengo tu compañía.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-5" aria-label="Todos mis mañanas con vos">
+   <div class="chapter-top"><span class="chapter-index">05</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Todos mis mañanas con vos</h2>
+   <div class="chapter-text"><p>Me imagino casándome con vos, construyendo nuestro hogar, formando una familia hermosa. Me imagino a nuestros dos hijos, una nena y un varón, llenando la casa de risas, juegos y amor.</p>
+<p>Me imagino despertándome a tu lado, compartiendo desayunos, haciendo planes, viviendo días buenos y también superando los difíciles juntos.</p>
+<p>Y también sueño con verte triunfar.</p>
+<p>Porque admiro profundamente esa mujer llena de energía, de sueños y de ganas de salir adelante que sos. Estoy convencido de que vas a conseguir todo lo que te propongas, y quiero estar ahí para acompañarte, celebrar cada uno de tus logros y recordarte siempre lo orgulloso que estoy de vos.</p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="6">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_06.jpg" aria-label="Ver foto 6 ampliada">
+    <img src="imagenes/foto_06.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 6 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Que nunca nos falten besos y motivos para sonreír.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-6" aria-label="Lo mucho que te extraño">
+   <div class="chapter-top"><span class="chapter-index">06</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Lo mucho que te extraño</h2>
+   <div class="chapter-text"><p>Mi bebé, hay algo que necesito que nunca olvides.</p>
+<p><strong>Jamás nadie generó en mí lo que vos generás.</strong></p>
+<p>Nunca nadie consiguió hacerme sentir de esta manera. Te amo con una intensidad que no puedo explicar, con un amor que a veces me desborda y que ni siquiera sé cómo poner en palabras.</p>
+<p>Hay días en los que te extraño tanto que miro nuestras fotos y termino llorando, porque lo único que quisiera en ese momento es tenerte cerquita, abrazarte fuerte, darte un beso y no soltarte.</p>
+<p>Necesito muchas fotos más con vos, mi amor. Necesito más recuerdos, más aventuras, más risas, más abrazos y más días compartidos.</p>
+<p>Quiero que algún día miremos este collage y nos riamos de lo mucho que nos costaba encontrar momentos para estar juntos, mientras disfrutamos de la hermosa vida que logramos construir.</p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="7">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_07.jpg" aria-label="Ver foto 7 ampliada">
+    <img src="imagenes/foto_07.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 7 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Qué lindo es encontrarnos en el mismo abrazo.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-7" aria-label="Una promesa desde el corazón">
+   <div class="chapter-top"><span class="chapter-index">07</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Una promesa desde el corazón</h2>
+   <div class="chapter-text"><p>Y quiero hacerte una promesa desde lo más profundo de mi corazón.</p>
+<p>Voy a hacer todo lo que esté a mi alcance para no defraudarte jamás. Para cuidar tu corazón, respetarte, protegerte, apoyarte y demostrarte con hechos todo lo que significás para mí.</p>
+<p>Quiero estar en tus días felices, pero también en esos días en los que no tengas ganas de nada. Quiero ser tu abrazo cuando estés triste, tu tranquilidad cuando tengas miedo y tu compañero cuando necesites fuerzas para seguir adelante.</p>
+<p>No te prometo que la vida siempre será perfecta, pero sí te prometo que mi amor por vos es sincero y que quiero elegirte y cuidarte cada día.</p>
+<p>Y hoy, después de todo lo que vivimos, puedo decirte algo que antes me daba miedo aceptar:</p>
+<p><strong>Ya no tengo miedo de amar. Porque con vos descubrí que el amor verdadero existe, que nos da fuerzas para superar las dificultades y que vale la pena luchar por un futuro juntos.</strong></p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="8">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_08.jpg" aria-label="Ver foto 8 ampliada">
+    <img src="imagenes/foto_08.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 8 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Me encanta verte feliz; me encanta ser parte de esa felicidad.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-8" aria-label="Mi bebé, mi compañera, mi vida">
+   <div class="chapter-top"><span class="chapter-index">08</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Mi bebé, mi compañera, mi vida</h2>
+   <div class="chapter-text"><p>Mi loca hermosa, mi bebé, mi amor...</p>
+<p>Vos sos mucho más que mi novia.</p>
+<p>Sos mi amiga, mi compañera, mi alegría, mi tranquilidad, la persona con la que quiero compartir mis mejores momentos y también mis días más difíciles.</p>
+<p>Sos esa persona que apareció en mi vida y terminó convirtiéndose en una de las razones más grandes de mi felicidad.</p>
+<p>Y si algún día te preguntás cuánto te amo, quiero que vuelvas a mirar estas fotos y leas esta carta.</p>
+<p>Porque en cada una de esas imágenes hay un hombre que está profundamente enamorado de vos, que sueña con tenerte a su lado y que no cambiaría por nada del mundo lo que siente por vos.</p>
+<p><strong>Desde que te conocí sentí que había algo especial entre nosotros. Hoy sé lo que era: había encontrado a mi amor verdadero.</strong></p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="9">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_09.jpg" aria-label="Ver foto 9 ampliada">
+    <img src="imagenes/foto_09.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 9 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Quiero estar en cada uno de tus sueños.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-9" aria-label="Una y mil veces, vos">
+   <div class="chapter-top"><span class="chapter-index">09</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Una y mil veces, vos</h2>
+   <div class="chapter-text"><p>Te amo, Aracelli.</p>
+<p>Te amo por quien sos, por lo que me hacés sentir y por todo lo que todavía nos queda por vivir.</p>
+<p>Te amo hoy, te voy a amar mañana y deseo seguir amándote hasta el último de mis días.</p>
+<p><strong>Porque vos sos mi bebé, mi amor, mi novia, mi amiga, mi compañera... pero, sobre todas las cosas, sos mi vida.</strong></p>
+<p>Y si volviera a nacer y tuviera la oportunidad de elegir a quién amar, te buscaría a vos una y mil veces más.</p>
+<p><strong>Gracias por existir, por amarme y por hacerme conocer el AMOR VERDADERO.</strong></p></div>
+  </section>
+<figure class="memory-photo reveal" data-memory="10">
+   <span class="photo-glow" aria-hidden="true"></span>
+   <button class="photo-button" type="button" data-full="imagenes/foto_10.jpg" aria-label="Ver foto 10 ampliada">
+    <img src="imagenes/foto_10.jpg" loading="lazy" decoding="async" alt="Un recuerdo de Aracelli y su amor, foto 10 de 10">
+   </button>
+   <figcaption><span aria-hidden="true">✦</span> Nos quedan tantas fotografías por vivir.</figcaption>
+  </figure>
+<section class="chapter reveal" id="capitulo-10" aria-label="Siempre tu gordo">
+   <div class="chapter-top"><span class="chapter-index">10</span><span class="chapter-line"></span><span class="chapter-icon" aria-hidden="true">♥</span></div>
+   <h2>Siempre tu gordo</h2>
+   <div class="chapter-text"><p>Con todo el amor que tengo para darte, hoy y siempre.</p>
+<p class="signature"><strong>Tu gordo. ❤️</strong></p>
+<p class="date-foot"><em>7 de julio de 2026, el día en que nuestros corazones se animaron a decir lo que ya sentían.</em></p></div>
+  </section>
+  <section class="grand-finale reveal">
+   <div class="mini">Nuestros recuerdos</div>
+   <h2>Y que nos queden miles de fotos más…</h2>
+   <img src="imagenes/collage.webp" loading="lazy" decoding="async" alt="Collage con las diez fotos originales de Aracelli y su amor">
+   <p>Te amo, Aracelli. Para siempre. ♥</p>
+  </section>
+ </div>
+</main>
+<footer class="footer">Hecho con todo mi amor, para <strong>Aracelli</strong>. Siempre, tu gordo ♥</footer>
+<dialog class="lightbox" id="lightbox" aria-label="Fotografía ampliada"><button class="close" type="button" id="closePhoto" aria-label="Cerrar foto">×</button><img id="lightboxImage" alt="Foto ampliada de nuestros recuerdos"></dialog>
+<script>
+(function(){
+ 'use strict';
+ document.documentElement.classList.add('js');
+ const audio=document.getElementById('ourSong');
+ const tip=document.getElementById('songTip');
+ let started=false;
+ function markPlaying(){started=true;tip.classList.remove('show');document.body.classList.add('song-playing')}
+ function tryMusic(){
+  if(started)return;
+  try{
+   audio.muted=false;
+   audio.volume=0.9;
+   const p=audio.play();
+   if(p&&typeof p.then==='function')p.then(markPlaying).catch(()=>{if(!started)tip.classList.add('show')});
+  }catch(err){tip.classList.add('show')}
+ }
+ audio.addEventListener('playing',markPlaying);
+ audio.addEventListener('error',()=>{tip.textContent='No se pudo cargar la canción.';tip.classList.add('show')});
+ // First attempt without any taps, plus retry on the first genuine gesture if blocked.
+ tryMusic();
+ document.addEventListener('DOMContentLoaded',tryMusic,{once:true});
+ window.addEventListener('pageshow',tryMusic);
+ document.addEventListener('pointerdown',tryMusic,{capture:true});
+ document.addEventListener('touchstart',tryMusic,{capture:true,passive:true});
+ document.addEventListener('keydown',tryMusic,{capture:true});
+
+ const progress=document.getElementById('readProgress');
+ let frameRequested=false;
+ function updateProgress(){
+  const limit=document.documentElement.scrollHeight-innerHeight;
+  progress.style.width=(limit>0?(100*scrollY/limit):0).toFixed(2)+'%';
+  frameRequested=false;
+ }
+ window.addEventListener('scroll',()=>{if(!frameRequested){requestAnimationFrame(updateProgress);frameRequested=true}},{passive:true});
+ updateProgress();
+ const els=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})
+  },{threshold:.07,rootMargin:'0px 0px 60px 0px'});
+  els.forEach(el=>observer.observe(el));
+ }else els.forEach(el=>el.classList.add('visible'));
+
+ const dialog=document.getElementById('lightbox');
+ const big=document.getElementById('lightboxImage');
+ document.querySelectorAll('.photo-button').forEach(btn=>btn.addEventListener('click',()=>{
+  big.src=btn.dataset.full;
+  if(typeof dialog.showModal==='function')dialog.showModal();
+ }));
+ document.getElementById('closePhoto').addEventListener('click',()=>dialog.close());
+ dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+})();
+</script>
+</body>
+</html>

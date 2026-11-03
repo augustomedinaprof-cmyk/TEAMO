@@ -1,0 +1,6 @@
+CARTA INTERACTIVA PARA ARACELLI
+
+Subir TODO el contenido de esta carpeta a la raiz de un repositorio de GitHub.
+Activar GitHub Pages desde Settings > Pages > Deploy from a branch, rama main, carpeta /(root).
+Archivos necesarios: index.html, imagenes/ y musica/.
+El audio esta configurado para iniciar automaticamente, pero algunos navegadores bloquean el sonido hasta la primera interaccion con la pagina. En ese caso tocar cualquier parte de la carta intentara activarlo, sin botones.
